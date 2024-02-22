@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+
+.bg-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.top-container {
+    background-color: #128C7E;
+    padding-top: 5px;
+    width: 400px;
+}
+
+.whatsapp-heading {
+    font-family: "Roboto";
+    font-weight: 500;
+    color: white;
+    font-size: 25px;
+}
+
+.camera-icon {
+    color: white;
+}
+
+.group-icon {
+    color: #ece5dd;
+}
+
+.top-container-paragraph {
+    font-family: "Roboto";
+    font-weight: 500;
+    color: #ece5dd;
+}
+
+
+
+
+.default-bottom {
+    border: 5px solid white;
+    color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 23px;
+    padding-bottom: 35px;
+    margin-bottom: -2px;
+}
+
+.profile-image {
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    background-size: cover;
+}
+
+.profile-name {
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.profile-paragraph {
+    font-family: "Roboto";
+    font-size: 15px;
+    margin-top: -8px;
+
+}
+
+.profile-top-container {
+    width: 400px;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(min-width:768px) {
+    .profile-container:hover {
+        background-color: lightblue;
+        cursor: grab;
+    }
+}
+
+@media(max-width:768px) {
+    .profile-top-container {
+        padding-left: 20px;
+        padding-right: 5px;
+    }
+}
+
+.calls-container {
+    width: 400px;
+}
+
+@media(max-width:768px) {
+    .calls-container {
+        padding-left: 20px;
+        padding-right: 5px;
+    }
+}
+
+.phone-image {
+    color: #128C7E;
+}
+
+.recent-paragraph {
+    font-family: "Roboto";
+    font-weight: bold;
+
+}
+
+.link-container {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 100%;
+    background-color: #128C7E;
+}
+
+.link-image {
+    color: white;
+}
+
+.add-call-container {
+    margin-top: -130px;
+}
+
+.status-container {
+    width: 400px;
+}
+
+@media(max-width:768px) {
+    .status-container {
+        padding-left: 20px;
+        padding-right: 5px;
+    }
+}
+
+.edit-container {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #128C7E;
+
+}
+
+.camera-container {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: #128C7E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+.side-container {
+    margin-top: -130px;
+    padding: 10px;
+
+}
+
+.status-image {
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    background-size: cover;
+    border: 3px solid #128C7E;
+    padding: 2px;
+
+
+
+}
+
+.profile-image1 {
+    border: 3px dashed #128C7E;
+}

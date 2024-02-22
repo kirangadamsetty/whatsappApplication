@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="bg-container">
+        <div class="shadow">
+
+            <div class="top-container d-flex flex-column justify-content-between">
+                <div class="d-flex justify-content-between pl-4 pr-1 pt-2">
+                    <h1 class="whatsapp-heading">WhatsApp</h1>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="ml-4 camera-icon bi bi-camera" viewBox="0 0 16 16">
+                            <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z" />
+                            <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="ml-4 camera-icon bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="ml-3 camera-icon bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                            <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-around mt-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="group-icon bi bi-people-fill" viewBox="0 0 16 16">
+                        <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+                    </svg>
+                    <p class="top-container-paragraph default-bottom" id="charts-paragraph">Charts</p>
+                    <p class="top-container-paragraph" id="status-paragraph">Status</p>
+                    <p class="top-container-paragraph" id="calls-paragraph">Calls</p>
+                </div>
+            </div>
+
+            <div class="profile-top-container" id="chart-container">
+                <div class="profile-container p-2" id="elon">
+                    <div class="d-flex">
+                        <img src="https://www.investopedia.com/thmb/100pfrvwgO7NvqoJ2glexxTNdvA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1395371348-a3f9430f269b4f73b2659fe10c21c88c.jpg" class="profile-image" />
+                        <div class="ml-3">
+                            <h1 class="profile-name">Elon Musk</h1>
+                            <p class="profile-paragraph">Hi Kiran , Good Morning are you free to disucss</p>
+                        </div>
+                    </div>
+                    <p class="profile-time">9:30</p>
+                </div>
+                <div class="profile-container p-2" id="mark">
+                    <div class="d-flex">
+                        <img src="https://washingtonmonthly.com/wp-content/uploads/2019/01/1920px-Mark_Zuckerberg_F8_2018_Keynote.jpg" class="profile-image" />
+                        <div class="ml-3">
+                            <h1 class="profile-name">Mark Zuckerberg</h1>
+                            <p class="profile-paragraph">Hi Kiran, Meta is eagerly waiting for your presence in company</p>
+                        </div>
+                    </div>
+                    <p class="profile-time">12:15</p>
+                </div>
+                <div class="profile-container p-2" id="anand">
+                    <div class="d-flex">
+                        <img src="https://etimg.etb2bimg.com/photo/92209951.cms" class="profile-image" />
+                        <div class="ml-3">
+                            <h1 class="profile-name">Anand Mahindra</h1>
+                            <p class="profile-paragraph">Hi Kiran, This is Anand Mahindra how are you doing today</p>
+                        </div>
+                    </div>
+                    <p class="profile-time">15:25</p>
+                </div>
+                <div class="profile-container p-2" id="sundar">
+                    <div class="d-flex">
+                        <img src="https://www.businessinsider.in/thumb/msid-99692019,width-700,resizemode-4,imgsize-65196/tech/news/alphabet-ceo-sundar-pichai-earned-226-million-last-year-making-him-one-of-the-worlds-best-paid-bosses/img644392e43d49030019df20c1.jpg" class="profile-image" />
+                        <div class="ml-3">
+                            <h1 class="profile-name">Sundar Pichai</h1>
+                            <p class="profile-paragraph">Hi Kiran, This is sundar pichai how are you doing today</p>
+                        </div>
+                    </div>
+                    <p class="profile-time">19:30</p>
+                </div>
+                <div class="profile-container p-2" id="steve">
+                    <div class="d-flex">
+                        <img src="https://img.etimg.com/thumb/msid-18523710,width-650,height-488,imgsize-41755,,resizemode-75/.jpg" class="profile-image" />
+                        <div class="ml-3">
+                            <h1 class="profile-name">Steve Jobs</h1>
+                            <p class="profile-paragraph">Hi Kiran, This is Steve Jobs how are you doing today</p>
+                        </div>
+                    </div>
+                    <p class="profile-time">12:30</p>
+                </div>
+                <div class="profile-container p-2" id="jeff">
+                    <div class="d-flex">
+                        <img src="https://www.elcorreo.com/xlsemanal/wp-content/uploads/sites/5/2021/07/jeff-bezos-el-amo-del-mundo.jpg" class="profile-image" />
+                        <div class="ml-3">
+                            <h1 class="profile-name">Jeff Bezos</h1>
+                            <p class="profile-paragraph">Hi Kiran, This is Jeff Bezos how are you doing today</p>
+                        </div>
+                    </div>
+                    <p class="profile-time">13:30</p>
+                </div>
+                <div class="profile-container p-2" id="narayana">
+                    <div class="d-flex">
+                        <img src="https://img.etimg.com/thumb/msid-92782436,width-210,height-158,imgsize-75440,,resizemode-75/narayana-murthy.jpg" class="profile-image" />
+                        <div class="ml-3">
+                            <h1 class="profile-name">Narayana Murthy</h1>
+                            <p class="profile-paragraph">Hi Kiran, This is Narayana Murthy how are you doing today</p>
+                        </div>
+                    </div>
+                    <p class="profile-time">21:30</p>
+                </div>
+                <div class="profile-container p-2" id="anand">
+                    <div class="d-flex">
+                        <img src="https://pi.tedcdn.com/r/ted-conferences-speaker-photos-production.s3.amazonaws.com/yoa4pm3vyerco6hqbhjxly3bf41d?w=255" class="profile-image" />
+                        <div class="ml-3">
+                            <h1 class="profile-name">Bill Gates</h1>
+                            <p class="profile-paragraph">Hi Kiran, This is Bill Gates how are you doing today</p>
+                        </div>
+                    </div>
+                    <p class="profile-time">17:00</p>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="calls-container d-none pt-1" id="call-container">
+                <div class="profile-container p-2">
+                    <div class="d-flex">
+                        <div class="link-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="link-image bi bi-link-45deg" viewBox="0 0 16 16">
+                                <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
+                                <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z" />
+                            </svg>
+                        </div>
+                        <div class="ml-3">
+                            <h1 class="profile-name">Create call link</h1>
+                            <p class="profile-paragraph">Share a link for your whatsApp call</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <p class="p-2 recent-paragraph">Recent</p>
+                <div class="profile-container p-2">
+                    <div class="d-flex">
+                        <img src="https://pi.tedcdn.com/r/ted-conferences-speaker-photos-production.s3.amazonaws.com/yoa4pm3vyerco6hqbhjxly3bf41d?w=255" class="profile-image" />
+                        <div class="ml-3">
+                            <h1 class="profile-name">Bill Gates</h1>
+                            <p class="profile-paragraph"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="mr-2 bi bi-arrow-down-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M2 13.5a.5.5 0 0 0 .5.5h6a.5.5 0 0 0 0-1H3.707L13.854 2.854a.5.5 0 0 0-.708-.708L3 12.293V7.5a.5.5 0 0 0-1 0v6z" />
+                                </svg>Today, 11:48</p>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="phone-image bi bi-camera-video-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5z" />
+                    </svg>
+                </div>
+
+                <div class="profile-container p-2">
+                    <div class="d-flex">
+                        <img src="https://pi.tedcdn.com/r/ted-conferences-speaker-photos-production.s3.amazonaws.com/yoa4pm3vyerco6hqbhjxly3bf41d?w=255" class="profile-image" />
+                        <div class="ml-3">
+                            <h1 class="profile-name">Bill Gates</h1>
+                            <p class="profile-paragraph"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="mr-2 bi bi-arrow-down-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M2 13.5a.5.5 0 0 0 .5.5h6a.5.5 0 0 0 0-1H3.707L13.854 2.854a.5.5 0 0 0-.708-.708L3 12.293V7.5a.5.5 0 0 0-1 0v6z" />
+                                </svg>Today, 11:48</p>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="phone-image bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                    </svg>
+                </div>
+
+                <div class="profile-container p-2">
+                    <div class="d-flex">
+                        <img src="https://www.investopedia.com/thmb/100pfrvwgO7NvqoJ2glexxTNdvA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1395371348-a3f9430f269b4f73b2659fe10c21c88c.jpg" class="profile-image" />
+
+                        <div class="ml-3">
+                            <h1 class="profile-name">Elon Musk</h1>
+                            <p class="profile-paragraph"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="mr-2 bi bi-arrow-down-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M2 13.5a.5.5 0 0 0 .5.5h6a.5.5 0 0 0 0-1H3.707L13.854 2.854a.5.5 0 0 0-.708-.708L3 12.293V7.5a.5.5 0 0 0-1 0v6z" />
+                                </svg>Today, 09:48</p>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="phone-image bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                    </svg>
+                </div>
+
+                <div class="profile-container p-2">
+                    <div class="d-flex">
+                        <img src="https://washingtonmonthly.com/wp-content/uploads/2019/01/1920px-Mark_Zuckerberg_F8_2018_Keynote.jpg" class="profile-image" />
+                        <div class="ml-3">
+                            <h1 class="profile-name">Mark Zukerberg</h1>
+                            <p class="profile-paragraph"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="mr-2 bi bi-arrow-down-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M2 13.5a.5.5 0 0 0 .5.5h6a.5.5 0 0 0 0-1H3.707L13.854 2.854a.5.5 0 0 0-.708-.708L3 12.293V7.5a.5.5 0 0 0-1 0v6z" />
+                                </svg>Today, 06:10</p>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="phone-image bi bi-camera-video-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5z" />
+                    </svg>
+                </div>
+
+                <div class="profile-container p-2">
+                    <div class="d-flex">
+                        <img src="https://etimg.etb2bimg.com/photo/92209951.cms" class="profile-image" />
+
+                        <div class="ml-3">
+                            <h1 class="profile-name">Anand Mahindra</h1>
+                            <p class="profile-paragraph"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="mr-2 bi bi-arrow-down-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M2 13.5a.5.5 0 0 0 .5.5h6a.5.5 0 0 0 0-1H3.707L13.854 2.854a.5.5 0 0 0-.708-.708L3 12.293V7.5a.5.5 0 0 0-1 0v6z" />
+                                </svg>Today, 05:18</p>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="phone-image bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                    </svg>
+                </div>
+
+
+                <div class="profile-container p-2">
+                    <div class="d-flex">
+                        <img src="https://www.investopedia.com/thmb/100pfrvwgO7NvqoJ2glexxTNdvA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1395371348-a3f9430f269b4f73b2659fe10c21c88c.jpg" class="profile-image" />
+
+                        <div class="ml-3">
+                            <h1 class="profile-name">Elon Musk</h1>
+                            <p class="profile-paragraph"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="mr-2 bi bi-arrow-down-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M2 13.5a.5.5 0 0 0 .5.5h6a.5.5 0 0 0 0-1H3.707L13.854 2.854a.5.5 0 0 0-.708-.708L3 12.293V7.5a.5.5 0 0 0-1 0v6z" />
+                                </svg>Today, 00:48</p>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="phone-image bi bi-camera-video-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5z" />
+                    </svg>
+                </div>
+                <div class="profile-container p-2">
+                    <div class="d-flex">
+                        <img src="https://etimg.etb2bimg.com/photo/92209951.cms" class="profile-image" />
+
+                        <div class="ml-3">
+                            <h1 class="profile-name">Anand Mahindra</h1>
+                            <p class="profile-paragraph"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="mr-2 bi bi-arrow-down-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M2 13.5a.5.5 0 0 0 .5.5h6a.5.5 0 0 0 0-1H3.707L13.854 2.854a.5.5 0 0 0-.708-.708L3 12.293V7.5a.5.5 0 0 0-1 0v6z" />
+                                </svg>Today, 00:25</p>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="phone-image bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                    </svg>
+                </div>
+                <div class="profile-container p-2">
+                    <div class="d-flex">
+                        <img src="https://pi.tedcdn.com/r/ted-conferences-speaker-photos-production.s3.amazonaws.com/yoa4pm3vyerco6hqbhjxly3bf41d?w=255" class="profile-image" />
+                        <div class="ml-3">
+                            <h1 class="profile-name">Bill Gates</h1>
+                            <p class="profile-paragraph"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="mr-2 bi bi-arrow-down-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M2 13.5a.5.5 0 0 0 .5.5h6a.5.5 0 0 0 0-1H3.707L13.854 2.854a.5.5 0 0 0-.708-.708L3 12.293V7.5a.5.5 0 0 0-1 0v6z" />
+                                </svg>Today, 00:18</p>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="phone-image bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                    </svg>
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="status-container d-none pt-1" id="status-container">
+                <div class="profile-container p-2">
+                    <div class="d-flex">
+                        <img src="https://res.cloudinary.com/delwcnho1/image/upload/v1686324820/WhatsApp_Image_2023-06-02_at_19.56.44__1_-removebg_ganq8f.png" class="status-image" />
+                        <div class="ml-3 pt-2">
+                            <h1 class="profile-name">My Status</h1>
+                            <p class="profile-paragraph">Tap to add status update</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <p class="p-2 recent-paragraph">Recent Updates</p>
+
+                <div class="profile-container p-2">
+                    <div class="d-flex">
+                        <img src="https://pi.tedcdn.com/r/ted-conferences-speaker-photos-production.s3.amazonaws.com/yoa4pm3vyerco6hqbhjxly3bf41d?w=255" class="profile-image1 status-image" />
+                        <div class="ml-3">
+                            <h1 class="profile-name">Bill Gates</h1>
+                            <p class="profile-paragraph">11 minutes ago</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="profile-container p-2">
+                    <div class="d-flex">
+                        <img src="https://images.hindustantimes.com/tech/img/2023/06/14/960x540/MICROSOFT-NADELLA-8_1684258629782_1686717541803.jpg" class="status-image" />
+                        <div class="ml-3">
+                            <h1 class="profile-name">Satya Nadella</h1>
+                            <p class="profile-paragraph">11 minutes ago</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="profile-container p-2">
+                    <div class="d-flex">
+                        <img src="https://www.businessinsider.in/thumb/msid-99692019,width-700,resizemode-4,imgsize-65196/tech/news/alphabet-ceo-sundar-pichai-earned-226-million-last-year-making-him-one-of-the-worlds-best-paid-bosses/img644392e43d49030019df20c1.jpg" class="status-image" />
+                        <div class="ml-3">
+                            <h1 class="profile-name">Sundar Pichai</h1>
+                            <p class="profile-paragraph">25 minutes ago</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="profile-container p-2">
+                    <div class="d-flex">
+                        <img src="https://www.investopedia.com/thmb/100pfrvwgO7NvqoJ2glexxTNdvA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1395371348-a3f9430f269b4f73b2659fe10c21c88c.jpg" class="status-image" />
+
+                        <div class="ml-3">
+                            <h1 class="profile-name">Elon Musk</h1>
+                            <p class="profile-paragraph">48 minutes ago</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="profile-container p-2">
+                    <div class="d-flex">
+                        <img src="https://washingtonmonthly.com/wp-content/uploads/2019/01/1920px-Mark_Zuckerberg_F8_2018_Keynote.jpg" class="profile-image1 status-image" />
+                        <div class="ml-3">
+                            <h1 class="profile-name">Mark Zukerberg</h1>
+                            <p class="profile-paragraph">54 minutes ago</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="profile-container p-2">
+                    <div class="d-flex">
+                        <img src="https://etimg.etb2bimg.com/photo/92209951.cms" class="profile-image1 status-image" />
+
+                        <div class="ml-3">
+                            <h1 class="profile-name">Anand Mahindra</h1>
+                            <p class="profile-paragraph">Today, 05:18</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="profile-container p-2">
+                    <div class="d-flex">
+                        <img src="https://img.etimg.com/thumb/msid-18523710,width-650,height-488,imgsize-41755,,resizemode-75/.jpg" class="status-image" />
+
+                        <div class="ml-3">
+                            <h1 class="profile-name">Steve Jobs</h1>
+                            <p class="profile-paragraph">Today, 00:48</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="profile-container p-2">
+                    <div class="d-flex">
+                        <img src="https://img.etimg.com/thumb/msid-92782436,width-210,height-158,imgsize-75440,,resizemode-75/narayana-murthy.jpg" class="status-image" />
+                        <div class="ml-3">
+                            <h1 class="profile-name">Narayana Murthi</h1>
+                            <p class="profile-paragraph">Today, 00:18</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="d-flex flex-column justify-content-end align-items-end side-container">
+                    <div class="edit-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                            <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z" />
+                        </svg>
+
+                    </div>
+                    <div class="camera-container mt-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
+                            <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                            <path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z" />
+                        </svg>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
